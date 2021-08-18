@@ -43,3 +43,10 @@ After installing you can use 'thydra' command to access automate menu & 'hydra' 
 <img src="https://img.icons8.com/emoji/200/000000/dragon-face.png"/>
   
   ## CREDITS : <a href="https://github.com/vanhauser-thc/thc-hydra"> thc-hydra </a>
+  
+ ## SCREENSHOTS : 
+  
+![Screenshot_20210818-151156_Termux](https://user-images.githubusercontent.com/72663288/129876590-312ca38a-2861-484a-89aa-6f4311fab1cf.jpg)
+
+![Screenshot_20210818-151227_Termux](https://user-images.githubusercontent.com/72663288/129876615-e4503f72-c385-44a4-8a16-6ddcba3b22e8.jpg)
+
