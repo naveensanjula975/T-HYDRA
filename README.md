@@ -41,7 +41,6 @@ After installing you can use 'thydra' command to access automate menu & 'hydra' 
 ```
 
 
-https://user-images.githubusercontent.com/72663288/129882870-3a958b79-7b01-49d1-a997-a17cc9f33a97.mp4
 
 <p align="center">
   
