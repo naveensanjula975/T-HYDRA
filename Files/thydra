@@ -22,7 +22,7 @@ def author():
 def menu():
   os.system('clear')
   print("\033[1;96m ")
-  tprint("""    X-HYDRA\n""")
+  tprint("""    T-HYDRA\n""")
   author()
   print("\033[1;32m [1] Gmail  Bruteforce")
   print("\033[1;32m [2] FTP    Bruteforce")
