@@ -32,8 +32,10 @@
 * apt update
 * apt upgrade
 * git clone https://github.com/isuruwa/T-HYDRA
-* cd T-HYDRA/files
+* cd T-HYDRA/Files
 * bash thyins.sh
+
+
 ```
 After installing you can use 'thydra' command to access automate menu & 'hydra' command to access hydra pakage in any directory 
 ```
