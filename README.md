@@ -35,6 +35,8 @@
 * cd T-HYDRA/Files
 * bash thyins.sh
 
+https://user-images.githubusercontent.com/72663288/129883682-6865fc94-35f4-480f-99d5-2d72cb9f3669.mp4
+
 
 ```
 After installing you can use 'thydra' command to access automate menu & 'hydra' command to access hydra pakage in any directory 
